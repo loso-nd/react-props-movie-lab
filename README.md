@@ -44,7 +44,7 @@ handling all of our `defaultProp`'ing in `MovieCard` before they are passed down
 the chain to the front and back components.
 
 ## Deliverables
-
+ 
 ###### `MovieShowcase`
 
 To get started, take a look at `src/data.js` to get a sense of the data you'll
