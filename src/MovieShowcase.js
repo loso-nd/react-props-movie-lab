@@ -31,8 +31,12 @@ generateMovieCards = () => {
 }
 
 
-// {
-//   props.paintingsList.map(painting => {
-//       return <PaintingCard key={painting.id} painting={painting}/>
-//   })  
-// }
+/**
+ * 
+ * movieData - an array of object which we can chain .map() and return the JSX of the <MovieCard /> passing in the necessary props. 
+ * 
+ * What is happening?
+ * - we have access to the data, but how are we going to use the data?
+ * - we create a function to get acccess to the individual properties inside the data, which we can do by .map(), then we can use is of those propertiesand pass it into MovieCard. 
+ * inside our render function is where we returrn the function 
+ */

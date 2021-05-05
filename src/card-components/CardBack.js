@@ -12,8 +12,7 @@ export default class CardBack extends Component {
 
   generateRatingElement = () => {
     // implement meeeee! See the readme for instructions
-   return this.props.IMDBRating == null ? 'No Rating Found' : <img src={imgMapper[this.props.IMDBRating]} alt="" /> 
-   {/* <h4>{this.generateRatingElement()}</h4> */}
+   return this.props.IMDBRating == null ? 'No Rating Found' : <img src={imgMapper[this.props.IMDBRating]} alt={this.props.title} /> 
   }
 
   render() {
@@ -25,8 +24,6 @@ export default class CardBack extends Component {
         <h4>{this.generateRatingElement()}</h4>
         <span />
         <h5 className="genres">{this.props.genres.join(', ')}</h5>
-        {/* <h4 className="IMDBRating">{this.props.IMDBRating === null ? 'No Rating Found' : null}</h4>
-        <img src= {imgMapper[this.props.IMDBRating] === !null ? 'No Rating Found' : null} alt=""/>       */}
       </div>
     )
   }
